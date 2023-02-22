@@ -1,8 +1,6 @@
 *,
 html {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif !important;
-  background-color: black;
-  color: white;
 }
 
 nav {
@@ -24,8 +22,45 @@ nav span a {
   text-decoration: none;
   font-weight: bold;
   font-size: x-large;
+  color: black;
 }
 
 nav span a:hover {
   color: red;
+}
+
+nav span a::after {
+  color: black;
+}
+
+main {
+  margin-top: 60px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+article h2 {
+  margin-bottom: 48px;
+  font-size: x-large;
+  text-align: center;
+}
+
+article figure {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+article figure img {
+  box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 1);
+}
+
+article figure figcaption {
+  font-size: medium;
 }
