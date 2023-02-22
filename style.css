@@ -68,11 +68,14 @@ article h2 {
 
 article figure {
   display: flex;
+  justify-items: center;
+  align-items: center;
   flex-direction: column;
   gap: 48px;
 }
 
 article figure img {
+  max-width: 400px;
   box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 1);
   -webkit-box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 1);
@@ -141,4 +144,41 @@ footer {
 footer a {
   font-weight: bold;
   color: black;
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 4px;
+    border-bottom: 8px solid black;
+    border-right: 0px solid black;
+  }
+  nav h1 {
+    display: none;
+  }
+
+  nav span a:first-child {
+    border-bottom: 0px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 8px solid black;
+  }
+
+  aside {
+    border: 0px;
+    border-bottom: 8px solid black;
+  }
+
+  section {
+    border: 0px;
+  }
+
+  article figure img {
+    max-width: 200px;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+  }
 }
