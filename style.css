@@ -108,6 +108,28 @@ aside figure img {
   -moz-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
 }
 
+table {
+  margin: auto;
+  margin-top: 48px;
+  font: large bold;
+}
+
+table tbody {
+  display: flex;
+  gap: 12px;
+  text-align: start;
+}
+
+table tbody tr {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+table tbody tr th {
+  width: 20%;
+}
+
 footer {
   text-align: center;
   font-size: large;
